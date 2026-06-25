@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orientation Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+    }
+
+    header {
+      background: linear-gradient(135deg, #003366, #0b5cad);
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+
+    .language {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      margin-bottom: 25px;
+    }
+
+    .lang-card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .section {
+      background: white;
+      margin-bottom: 20px;
+      padding: 22px;
+      border-radius: 16px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      color: #003366;
+      margin-top: 0;
+    }
+
+    .item {
+      display: block;
+      background: #eef4ff;
+      color: #003366;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .item:hover {
+      background: #dbeaff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏠 Orientation Portal</h1>
+  <p>新入社員・技能実習生向け案内サイト</p>
+  <p>Website hướng dẫn dành cho nhân viên mới</p>
+</header>
+
+<div class="container">
+
+  <input type="text" id="searchInput" placeholder="🔍 Tìm kiếm tài liệu / 資料を検索 / Cari dokumen">
+
+  <div class="language">
+    <div class="lang-card">🇯🇵 日本語</div>
+    <div class="lang-card">🇮🇩 Bahasa Indonesia</div>
+    <div class="lang-card">🇻🇳 Tiếng Việt</div>
+  </div>
+
+  <div class="section">
+    <h2>① Orientation｜入社オリエンテーション</h2>
+    <a class="item" href="#">📄 Orientation</a>
+    <a class="item" href="#">🎥 Video hướng dẫn</a>
+    <a class="item" href="#">❓ FAQ</a>
+  </div>
+
+  <div class="section">
+    <h2>② 会社ルール｜Quy định công ty</h2>
+    <a class="item" href="#">📘 会社のルール</a>
+    <a class="item" href="#">📘 労働条件</a>
+    <a class="item" href="#">📘 しあわせターミナルの読み合わせ</a>
+    <a class="item" href="#">📘 身だしなみ・接遇マナー</a>
+    <a class="item" href="#">📘 勤怠について</a>
+    <a class="item" href="#">📘 TimePro-VG マニュアル</a>
+    <a class="item" href="#">📘 会社からの貸し出し品</a>
+  </div>
+
+  <div class="section">
+    <h2>③ 寮生活｜Ký túc xá</h2>
+    <a class="item" href="#">🏠 寮のルール</a>
+    <a class="item" href="#">🏠 Cuộc sống trong ký túc xá</a>
+    <a class="item" href="#">🏠 Thiết bị trong phòng</a>
+  </div>
+
+  <div class="section">
+    <h2>④ 生活案内｜Cuộc sống tại Nhật</h2>
+    <a class="item" href="#">🏥 病気になったときの連絡と対応</a>
+    <a class="item" href="#">💴 送金するときの考え方</a>
+    <a class="item" href="#">🚮 ごみ分別アプリ「さんあ〜る」</a>
+    <a class="item" href="#">🇯🇵 愛知県で生活するための情報</a>
+  </div>
+
+  <div class="section">
+    <h2>⑤ 安全・コンプライアンス</h2>
+    <a class="item" href="#">⚠️ 【技能実習生】失踪予防指導</a>
+    <a class="item" href="#">⚠️ 防止に努める</a>
+    <a class="item" href="#">☎️ 緊急連絡</a>
+  </div>
+
+  <div class="section">
+    <h2>⑥ 店舗案内｜Cửa hàng</h2>
+    <a class="item" href="#">🚗 店舗案内</a>
+    <a class="item" href="#">🗺️ Bản đồ cửa hàng</a>
+    <a class="item" href="#">👤 Người phụ trách</a>
+  </div>
+
+  <div class="section">
+    <h2>📄 Danh mục PDF｜PDF資料</h2>
+    <a class="item" href="#">📂 Tất cả tài liệu PDF</a>
+    <a class="item" href="#">📂 日本語資料</a>
+    <a class="item" href="#">📂 Bahasa Indonesia</a>
+    <a class="item" href="#">📂 Tiếng Việt</a>
+  </div>
+
+</div>
+
+<footer>
+  © Orientation Portal
+</footer>
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const items = document.querySelectorAll(".item, .section");
+
+  searchInput.addEventListener("keyup", function() {
+    const keyword = this.value.toLowerCase();
+
+    document.querySelectorAll(".section").forEach(section => {
+      let found = false;
+      section.querySelectorAll(".item").forEach(item => {
+        const text = item.textContent.toLowerCase();
+        if (text.includes(keyword)) {
+          item.style.display = "block";
+          found = true;
+        } else {
+          item.style.display = "none";
+        }
+      });
+      section.style.display = found || section.textContent.toLowerCase().includes(keyword) ? "block" : "none";
+    });
+  });
+</script>
+
+</body>
+</html>
